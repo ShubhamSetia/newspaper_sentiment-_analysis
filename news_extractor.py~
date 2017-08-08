@@ -30,9 +30,9 @@ class newsExtractor(object):
 
 
 #urls = ['','','','','','','',]
-hindustan_times = newsExtractor("http://www.tribuneindia.com/")
+hindustan_times = newsExtractor("http://indianexpress.com/")
 hindustan_times.extract_article()
-hindustan_times.store_result("tribune_5_Aug.csv")
+hindustan_times.store_result("ie_7_Aug.csv")
 #http://www.hindustantimes.com/
 #http://www.thehindu.com/
 #http://timesofindia.indiatimes.com/
