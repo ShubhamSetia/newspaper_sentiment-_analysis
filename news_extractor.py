@@ -29,10 +29,17 @@ class newsExtractor(object):
 				w.writerow(row)
 
 
+India_urls = ['http://www.hindustantimes.com/','http://www.thehindu.com/','http://timesofindia.indiatimes.com/',
+	'http://www.tribuneindia.com/','http://indianexpress.com/','http://economictimes.indiatimes.com/',
+	'http://www.deccanherald.com/'
+]
+newspaperNames = ['ht','hindu','toi','tribune','ie','et','dh']
+
+
 #urls = ['','','','','','','',]
-hindustan_times = newsExtractor("http://www.tribuneindia.com/")
-hindustan_times.extract_article()
-hindustan_times.store_result("tribune_7_Aug.csv")
+#hindustan_times = newsExtractor("http://www.tribuneindia.com/")
+#hindustan_times.extract_article()
+#hindustan_times.store_result("tribune_7_Aug.csv")
 #http://www.hindustantimes.com/
 #http://www.thehindu.com/
 #http://timesofindia.indiatimes.com/
