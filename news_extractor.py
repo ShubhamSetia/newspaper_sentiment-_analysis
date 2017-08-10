@@ -34,6 +34,13 @@ India_urls = ['http://www.hindustantimes.com/','http://www.thehindu.com/','http:
 	'http://www.deccanherald.com/'
 ]
 newspaperNames = ['ht','hindu','toi','tribune','ie','et','dh']
+i=0;
+date = ''
+for url in India_urls:
+	paper = newsExtractor(url)
+	paper.extract_article()
+	paper.store_result(newspaperNames[i]+date+'.csv')
+
 
 
 #urls = ['','','','','','','',]
